@@ -62,8 +62,6 @@ The frontend will run on `http://localhost:3000`
 - TypeScript
 - Express.js
 - CORS
-- Helmet (Security)
-- Morgan (Logging)
 
 ### Frontend
 - React.js
