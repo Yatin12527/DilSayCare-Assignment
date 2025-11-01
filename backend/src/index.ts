@@ -1,6 +1,7 @@
 import express, { Application } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import slotRoute from "../src/routes/index"
 
 dotenv.config();
 
@@ -20,6 +21,8 @@ const pg = require("knex")({
   },
   searchPath: ["knex", "public"],
 });
+
+app.use("/slot", slotRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
